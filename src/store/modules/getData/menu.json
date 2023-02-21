@@ -49,21 +49,52 @@
               "domainVisible": false
             },
             {
-              "name": "Query",
-              "path": "query",
+              "name": "vueuse",
+              "path": "vueuse",
               "hidden": false,
               "redirect": null,
-              "component": "vitedemo/test/query/index.vue",
-              "alwaysShow": null,
+              "component": "Layout",
+              "alwaysShow": true,
               "meta": {
-                "title": "query组件",
+                "title": "vueuse",
                 "icon": "#"
               },
               "visible": "0",
               "menuType": "C",
-              "children": null,
               "needCache": true,
-              "domainVisible": false
+              "domainVisible": false,
+              "children":[
+                {
+                  "name": "mouse",
+                  "path": "mouse",
+                  "hidden": false,
+                  "redirect": null,
+                  "component": "vitedemo/test/vueuse/mouse.vue",
+                  "alwaysShow": null,
+                  "meta": {
+                    "title": "mouse",
+                    "icon": "#"
+                  },
+                  "children": null,
+                  "needCache": true,
+                  "domainVisible": false
+                },
+                {
+                  "name": "useDropZone",
+                  "path": "useDropZone",
+                  "hidden": false,
+                  "redirect": null,
+                  "component": "vitedemo/test/vueuse/useDropZone.vue",
+                  "alwaysShow": null,
+                  "meta": {
+                    "title": "useDropZone",
+                    "icon": "#"
+                  },
+                  "children": null,
+                  "needCache": true,
+                  "domainVisible": false
+                }
+              ]
             },
             {
               "name": "Test1",
