@@ -3,6 +3,7 @@
     <h3>鼠标位置: {{x}} x {{y}}</h3>
     <!-- <p>Interval fired: {{ counter }}</p> -->
   </div>
+  <div>1111</div>
 </template>
 <script setup lang="ts">
 import { useMouse, usePreferredDark, useLocalStorage  } from '@vueuse/core'
