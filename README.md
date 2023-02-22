@@ -1,6 +1,5 @@
-# vite+vue3+ts+pinia+element-plus+qiankun项目
-> vite+vue3+ts+pinia+element-plus+qiankun 是一个后台管理系统模板；
-> 此项目集成的qiankun（即可以当做一个子应用）
+# vite+vue3+ts+pinia+element-plus项目
+> vite+vue3+ts+pinia+element-plus 是一个后台管理系统模板；
 
 ### 前言
 wocwin-admin，基于 Vue3.2、TypeScript、Vite3、Pinia、Element-Plus 开源的一套后台管理模板。
@@ -49,7 +48,7 @@ npm run serve
 
 #### 第三步、[以Pinia代替vuex及Pinia持久化处理](https://blog.csdn.net/cwin8951/article/details/127365114)
 #### 第四步、[Layout组件搭建、如何全局自动注册基础组件、缓存页面](https://blog.csdn.net/cwin8951/article/details/127413956)
-#### 第五步、[qiankun引入并让其主子应用之间切换](https://blog.csdn.net/cwin8951/article/details/127431084)
+<!-- #### 第五步、[qiankun引入并让其主子应用之间切换](https://blog.csdn.net/cwin8951/article/details/127431084) -->
 #### 第六步、[条件查询基础组件讲解](https://blog.csdn.net/cwin8951/article/details/126894087)
 #### 第七步、[TTable基础组件讲解](https://blog.csdn.net/cwin8951/article/details/126939128)
 

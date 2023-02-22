@@ -11,8 +11,8 @@ import qiankun from 'vite-plugin-qiankun'
 const packName = require('./package').name
 // https://vitejs.dev/config/
 export default defineConfig({
-  // 配置NG——这个是与后台、运维约定好的，做NG转发；即主应用地址+子应用base就会直接NG转发
-  base: '/wocwin-admin/',
+  // // 配置NG——这个是与后台、运维约定好的，做NG转发；即主应用地址+子应用base就会直接NG转发
+  // base: '/wocwin-admin/',
   plugins: [
     vue(),
     vueJsx(),
@@ -43,25 +43,15 @@ export default defineConfig({
     headers: {
       'Access-Control-Allow-Origin': '*'
     },
-    host: '0.0.0.0',
-    port: 3300,
+    host: 'localhost',
+    port: 9527,
     open: true,
     https: false,
     proxy: {
-      '^/mes': {
-        target: `http://10.0.10.243:5000/mesv2/`,
+      '/api': {
+        target: 'your https address',
         changeOrigin: true,
-        rewrite: (p) => p.replace(/^\/mes/, '')
-      },
-      '^/portal-user': {
-        target: `http://10.0.10.240:8172`,
-        changeOrigin: true,
-        rewrite: (p) => p.replace(/^\/portal-user/, '/portal-user')
-      },
-      '^/portal-sso': {
-        target: `http://10.0.10.240:8171`,
-        changeOrigin: true,
-        rewrite: (p) => p.replace(/^\/portal-sso/, '/portal-sso')
+        rewrite: (path: string) => path.replace(/^\/api/, '/')
       }
     }
   },

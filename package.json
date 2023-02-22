@@ -1,16 +1,15 @@
 {
-  "name": "vite-vue3-ts-qiankun-demo",
+  "name": "vite-vue3-ts-demo",
   "private": false,
   "version": "0.0.1",
   "description": "vue3vite模板",
   "author": "wocwin",
   "type": "module",
   "scripts": {
-    "serve": "vite --mode dev",
-    "dev": "vue-tsc --noEmit && vite build --mode dev",
-    "sit": "vue-tsc --noEmit && vite build --mode sit",
+    "dev": "vite --mode dev",
+    "test": "vue-tsc --noEmit && vite build --mode test",
     "uat": "vue-tsc --noEmit && vite build --mode uat",
-    "prod": "vue-tsc --noEmit && vite build --mode prod",
+    "prod": "vue-tsc --noEmit && vite build --mode production",
     "deploy": "deploy.sh",
     "preview": "vite preview"
   },
