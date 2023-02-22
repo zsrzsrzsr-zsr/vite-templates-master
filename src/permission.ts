@@ -27,7 +27,7 @@ router.beforeEach((to: any, from: any, next: Function) => {
             accessRoutes.forEach((rout: any) => {
               router.addRoute(rout) // 动态添加可访问路由表
             })
-            // console.log('我看看路由表', accessRoutes)
+            // console.log('路由表', accessRoutes)
             next({ ...to, replace: true })
           })
           .catch(err => {
