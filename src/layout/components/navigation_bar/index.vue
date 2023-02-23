@@ -19,9 +19,9 @@
         </div>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item @click="setting=true">
+            <!-- <el-dropdown-item @click="setting=true">
               <span style="display:block;">布局设置</span>
-            </el-dropdown-item>
+            </el-dropdown-item> -->
             <el-dropdown-item divided @click="logout">
               <span style="display:block;">退出登录</span>
             </el-dropdown-item>
@@ -29,7 +29,7 @@
         </template>
       </el-dropdown>
     </div>
-    <settings v-if="setting" />
+    <!-- <settings v-if="setting" /> -->
   </div>
 </template>
 
@@ -76,7 +76,9 @@ function logout() {
   }).then(() => {
     userStore.FedLogOut()
     useTagViewsStore().delAllViews()
-    window.location.href = '/'
+    window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__
+      ? '/'
+      : '/wocwin-admin/'
   })
 }
 </script>

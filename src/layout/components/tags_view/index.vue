@@ -63,7 +63,7 @@ export default defineComponent({
         //     console.warn(err)
         //   })
         // } else {
-        window.location.href = '/'
+        window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'
         // }
       }
     }

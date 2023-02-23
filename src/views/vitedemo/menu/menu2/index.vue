@@ -1,3 +1,9 @@
 <template>
-  <div class="menu2">menu2页面</div>
+<div>
+  <h1>111</h1>
+</div>
 </template>
+<script setup lang='ts'>
+</script>
+<style lang='scss' scoped>
+</style>

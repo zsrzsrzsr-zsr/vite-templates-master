@@ -15,10 +15,10 @@ import useTagViewsStore from '@/store/modules/tagViews'
 const tagAndTagSpacing = ref(4)
 const { proxy } = getCurrentInstance() as any
 
-const scrollWrapper = computed(() => proxy.$refs.scrollContainer.$refs.wrap$);
+const scrollWrapper = computed(() => proxy.$refs.scrollContainer.$refs.wrapRef);
 
 onMounted(() => {
-  // scrollWrapper.value.addEventListener('scroll', emitScroll, true)
+  scrollWrapper.value.addEventListener('scroll', emitScroll, true)
 })
 onBeforeUnmount(() => {
   scrollWrapper.value.removeEventListener('scroll', emitScroll)

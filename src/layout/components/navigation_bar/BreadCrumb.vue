@@ -39,7 +39,7 @@ export default defineComponent({
         router.push(redirect)
         return
       }
-      window.location.href = '/'
+      window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin'
     }
     // 在挂载阶段执行获取面包屑数组
     onMounted(() => {

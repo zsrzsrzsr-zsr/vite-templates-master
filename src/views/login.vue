@@ -2,8 +2,7 @@
   <div class="login">
     <div class="content">
       <div class="input-format">
-        <img src="../assets/images/logo.jpg" class="logon" />
-        <h2 class="title">vue3+vite子应用模板</h2>
+        <h2 class="title">应用模板</h2>
         <el-form ref="loginFormRef" :model="loginForm" :rules="loginRules" class="login-form">
           <el-form-item prop="username">
             <el-input v-model="loginForm.username" type="text" placeholder="账号">

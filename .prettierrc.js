@@ -1,7 +1,7 @@
 module.exports = {
   // 一行最多 100 字符
   printWidth: 100,
-  // 使用 4 个空格缩进
+  // 使用 2 个空格缩进
   tabWidth: 2,
   // 不使用缩进符，而使用空格
   useTabs: false,
@@ -14,7 +14,7 @@ module.exports = {
   // jsx 不使用单引号，而使用双引号
   jsxSingleQuote: false,
   // 尾随逗号
-  trailingComma: 'all',
+  trailingComma: 'es5',
   // 大括号内的首尾需要空格
   bracketSpacing: true,
   // jsx 标签的反尖括号需要换行
@@ -34,4 +34,7 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   // 换行符使用 lf
   endOfLine: 'lf',
+  vueIndentScriptAndStyle: false,
+  // 默认是auto,控制被引号包裹的代码是否进行格式化
+  embeddedLanguageFormatting: 'off',
 }

@@ -3,7 +3,7 @@
   <div class="sidebar-logo-container" :class="{'collapse': collapse}">
     <transition name="sidebarLogoFade">
       <div v-if="false" key="collapse" class="sidebar-logo-link" @click="goIndex">
-        <img v-if="logo" :src="logo" class="sidebar-logo" />
+        <!-- <img v-if="logo" :src="logo" class="sidebar-logo" /> -->
       </div>
       <div v-else key="expand" class="sidebar-logo-link" @click="goIndex">
         <!-- <img v-if="logo" :src="logo" class="sidebar-logo" /> -->
@@ -32,7 +32,7 @@ export default defineComponent({
     // const title = settings.title
     const state = reactive({
       goIndex: () => {
-        window.location.href = '/'
+        window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'
       }
     })
     return {

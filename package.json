@@ -1,21 +1,21 @@
 {
-  "name": "vite-vue3-ts-demo",
+  "name": "vite-vue3-ts-qiankun-demo",
   "private": false,
   "version": "0.0.1",
-  "description": "vue3vite模板",
+  "description": "组件练习",
   "author": "wocwin",
   "type": "module",
   "scripts": {
     "dev": "vite --mode dev",
-    "test": "vue-tsc --noEmit && vite build --mode test",
+    "sit": "vue-tsc --noEmit && vite build --mode sit",
     "uat": "vue-tsc --noEmit && vite build --mode uat",
-    "prod": "vue-tsc --noEmit && vite build --mode production",
+    "prod": "vue-tsc --noEmit && vite build --mode prod",
     "deploy": "deploy.sh",
     "preview": "vite preview"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
-    "@vueuse/core": "^9.12.0",
+    "@vueuse/core": "^9.13.0",
     "axios": "^1.1.2",
     "element-plus": "^2.2.18",
     "normalize.css": "^8.0.1",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.2",
-    "@types/node": "^18.7.18",
+    "@types/node": "18.7.18",
     "@types/nprogress": "^0.2.0",
     "@types/path-browserify": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
