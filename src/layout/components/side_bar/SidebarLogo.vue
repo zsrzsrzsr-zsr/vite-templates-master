@@ -32,7 +32,8 @@ export default defineComponent({
     // const title = settings.title
     const state = reactive({
       goIndex: () => {
-        window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'
+        // window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'
+        window.location.href = '/'
       }
     })
     return {

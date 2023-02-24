@@ -12,7 +12,8 @@ const packName = require('./package').name
 // https://vitejs.dev/config/
 export default defineConfig({
   // 配置NG——这个是与后台、运维约定好的，做NG转发；即主应用地址+子应用base就会直接NG转发
-  base: '/wocwin-admin/',
+  // base: '/wocwin-admin/',
+  base: '',
   plugins: [
     vue(),
     vueJsx(),

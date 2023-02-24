@@ -76,9 +76,10 @@ function logout() {
   }).then(() => {
     userStore.FedLogOut()
     useTagViewsStore().delAllViews()
-    window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__
-      ? '/'
-      : '/wocwin-admin/'
+    // window.location.href = qiankunWindow.__POWERED_BY_QIANKUN__
+    //   ? '/'
+    //   : '/wocwin-admin/'
+    window.location.href = '/'
   })
 }
 </script>

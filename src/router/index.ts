@@ -90,7 +90,8 @@ export const constantRoutes: any = qiankunWindow.__POWERED_BY_QIANKUN__
   ]
 
 const router = createRouter({
-  history: createWebHistory(qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'),
+  history: createWebHistory('/'),
+  // history: createWebHistory(qiankunWindow.__POWERED_BY_QIANKUN__ ? '/' : '/wocwin-admin/'),
   routes: constantRoutes,
 })
 export default router
