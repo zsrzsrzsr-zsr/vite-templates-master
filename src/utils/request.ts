@@ -2,7 +2,7 @@ import axios from 'axios'
 import Message from '@/utils/message'
 import { ElMessageBox } from 'element-plus'
 import { getToken } from '@/utils/cookies'
-import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 import useUserStore from '@/store/modules/user'
 export default (config: any) => {
   // 创建axios实例

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>欢迎vite+vue3+ts+pinia+element-plus+qiankun项目</h1>
+    <h1>欢迎vite+vue3+ts+pinia+element-plus项目</h1>
     <el-row class="mb-4">
       <el-button>Default</el-button>
       <el-button type="primary">Primary</el-button>

@@ -7,7 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite' // 自动导入
 import viteCompression from 'vite-plugin-compression' // 静态资源压缩
 // import {visualizer} from 'rollup-plugin-visualizer' // 打包后的视图文件
 // 配置qiankun
-import qiankun from 'vite-plugin-qiankun'
+// import qiankun from 'vite-plugin-qiankun'
 const packName = require('./package').name
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,9 +23,9 @@ export default defineConfig({
       dts: 'src/auto-import.d.ts' // 生成 `auto-import.d.ts` 全局声明
     }),
     // 配置qiankun
-    qiankun(`${packName}`, {
-      useDevMode: true
-    }),
+    // qiankun(`${packName}`, {
+    //   useDevMode: true
+    // }),
     viteCompression({
       verbose: true,
       disable: false, // 不禁用压缩

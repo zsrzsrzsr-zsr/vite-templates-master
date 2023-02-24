@@ -33,7 +33,7 @@ import SvgIcon from '@/components/SvgIcon/index.vue'
 /**
  * 配置qiankun
  */
-import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 let instance: any = null
 function render(props: any = {}) {
   const { container } = props
@@ -62,25 +62,25 @@ function render(props: any = {}) {
   instance?.mount(container ? container.querySelector('#app') : '#app')
   console.log('开始加载相关内容')
 }
-renderWithQiankun({
-  mount(props: any) {
-    render(props)
-  },
-  bootstrap() {
-    console.log('%c', 'color:green;', ' ChildOne bootstrap')
-  },
-  update() {
-    console.log('%c', 'color:green;', ' ChildOne update')
-  },
-  unmount(props: any) {
-    console.log('unmount', props)
-    instance.unmount()
-    instance._container.innerHTML = ''
-    instance = null
-  }
-})
+// renderWithQiankun({
+//   mount(props: any) {
+//     render(props)
+//   },
+//   bootstrap() {
+//     console.log('%c', 'color:green;', ' ChildOne bootstrap')
+//   },
+//   update() {
+//     console.log('%c', 'color:green;', ' ChildOne update')
+//   },
+//   unmount(props: any) {
+//     console.log('unmount', props)
+//     instance.unmount()
+//     instance._container.innerHTML = ''
+//     instance = null
+//   }
+// })
 
-if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-  console.log('并不是qiankun渲染')
+// if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+//   console.log('并不是qiankun渲染')
   render()
-}
+// }

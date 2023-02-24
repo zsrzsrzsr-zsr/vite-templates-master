@@ -36,7 +36,7 @@ import {
   inject
 } from 'vue'
 import { RouteRecordRaw, useRoute, useRouter } from 'vue-router'
-import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 import ScrollPane from './ScrollPane.vue'
 export default defineComponent({
   components: {

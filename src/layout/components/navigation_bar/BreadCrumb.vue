@@ -14,7 +14,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref, watch } from 'vue'
 import { RouteLocationMatched, useRoute, useRouter } from 'vue-router'
-import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 
 export default defineComponent({
   setup() {

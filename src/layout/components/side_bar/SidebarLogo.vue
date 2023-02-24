@@ -20,7 +20,7 @@ import titleDescription from '../../../../package.json'
 const title =titleDescription.description
 // const logo = require('@/assets/logo/logo.png')
 const logo = new URL('../../../assets/logo/logo.png', import.meta.url).href
-import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 export default defineComponent({
   props: {
     collapse: {

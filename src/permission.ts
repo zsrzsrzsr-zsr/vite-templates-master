@@ -3,7 +3,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { getToken } from '@/utils/cookies'
 import { ElMessage } from 'element-plus'
-import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 import useUserStore from '@/store/modules/user'
 import usePermissionStore from '@/store/modules/permission'
 
@@ -37,7 +37,7 @@ router.beforeEach((to: any, from: any, next: Function) => {
           })
       } else {
         // 进入页面前设置菜单
-        if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+        // if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
           // 子应用单独运行，直接进入该系统
           const add_routes = toRaw(usePermissionStore().sysMenu)
           if (to.path === '/index') {
@@ -52,10 +52,10 @@ router.beforeEach((to: any, from: any, next: Function) => {
             console.log('子项目的next')
             next()
           }
-        } else {
-          console.log('主应用进入子应用')
-          next()
-        }
+        // } else {
+        //   console.log('主应用进入子应用')
+        //   next()
+        // }
       }
     }
   } else {
