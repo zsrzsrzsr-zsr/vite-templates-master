@@ -15,7 +15,7 @@ const usePermissionStore = defineStore('permission',{
       routes: [] as any[],
       addRoutes: [] as any[],
       sysMenu: [] as any[],
-      parentPath: '/pms2'
+      parentPath: ''
     }
   },
   actions: {
