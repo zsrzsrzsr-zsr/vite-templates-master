@@ -1,6 +1,5 @@
 import { getSidebarStatus, getSize, setSidebarStatus, setSize } from '@/utils/cookies'
 import { defineStore } from 'pinia'
-// import piniaPersistConfig from '../piniaPersist'
 const useAppStore = defineStore('app',
   {
     state: () => ({
@@ -14,18 +13,8 @@ const useAppStore = defineStore('app',
     }),
     actions: {
       toggleSideBar(withoutAnimation: any) {
-        // if (this.sidebar.hide) {
-        //   return false;
-        // }
-        // this.sidebar.opened = !this.sidebar.opened
-        // this.sidebar.withoutAnimation = withoutAnimation
-        // if (this.sidebar.opened) {
-        //   setSidebarStatus('opened')
-        // } else {
-        //   setSidebarStatus('closed')
-        // }
         this.sidebar.opened = !this.sidebar.opened
-        console.log(111, this.sidebar.opened)
+        console.log('---侧边栏显隐---', this.sidebar.opened)
         this.sidebar.withoutAnimation = withoutAnimation
         if (this.sidebar.opened) {
           setSidebarStatus('opened')
@@ -49,7 +38,6 @@ const useAppStore = defineStore('app',
         this.sidebar.hide = status
       }
     },
-    // persist: piniaPersistConfig('app')
   })
 
 export default useAppStore
