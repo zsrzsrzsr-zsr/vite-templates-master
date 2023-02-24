@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 // 所有业务api接口
 import api from './api'
+import directives from "@/components/directives/index";
 /**
  * element-plus
  */
@@ -39,6 +40,7 @@ function render(props: any = {}) {
   const { container } = props
   instance = createApp(App)
   instance.use(router)
+  instance.use(directives)
   instance.use(pinia)
   // 注册全局api方法
   instance.config.globalProperties.$api = api
@@ -49,7 +51,6 @@ function render(props: any = {}) {
   // 注册ElementPlus
   instance.use(ElementPlus, {
     locale // 语言设置
-    // size: Cookies.get('size') || 'medium' // 尺寸设置
   })
   // 自动注册全部本地组件
   instance.use(baseComponentsInstall)

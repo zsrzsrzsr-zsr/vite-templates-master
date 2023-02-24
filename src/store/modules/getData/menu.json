@@ -250,7 +250,7 @@
           "component": "Layout",
           "alwaysShow": true,
           "meta": {
-            "title": "文件上传组件",
+            "title": "指令组件",
             "icon": "example"
           },
           "visible": "0",
@@ -282,6 +282,23 @@
               "alwaysShow": null,
               "meta": {
                 "title": "拖拽指令",
+                "icon": "#"
+              },
+              "visible": "0",
+              "menuType": "C",
+              "children": null,
+              "needCache": true,
+              "domainVisible": false
+            },
+            {
+              "name": "WatermarkDirect",
+              "path": "watermarkDirect",
+              "hidden": false,
+              "redirect": null,
+              "component": "directives/watermarkDirect/index.vue",
+              "alwaysShow": null,
+              "meta": {
+                "title": "水印指令",
                 "icon": "#"
               },
               "visible": "0",

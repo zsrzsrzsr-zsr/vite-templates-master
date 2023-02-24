@@ -14,7 +14,6 @@
 import useTagsViewStore from '@/store/modules/tagViews'
 const tagsViewStore = useTagsViewStore()
 </script>
-
 <style lang="scss" scoped>
 .app-main {
   /* 50= navbar  50  */

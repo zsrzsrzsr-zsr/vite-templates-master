@@ -13,5 +13,4 @@ const longpress = () => {
 </script>
 
 <style scoped lang="scss">
-@import "./index.scss";
 </style>
