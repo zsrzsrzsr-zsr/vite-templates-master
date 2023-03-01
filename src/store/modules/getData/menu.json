@@ -310,6 +310,58 @@
           ],
           "needCache": true,
           "domainVisible": false
+        },
+        {
+          "name": "Layout",
+          "path": "myTest",
+          "hidden": false,
+          "redirect": null,
+          "component": "Layout",
+          "alwaysShow": true,
+          "meta": {
+            "title": "测试练习",
+            "icon": "example"
+          },
+          "visible": "0",
+          "menuType": "M",
+          "children": [
+            {
+              "name": "Test1",
+              "path": "test1",
+              "hidden": false,
+              "redirect": null,
+              "component": "test/myTest/test1.vue",
+              "alwaysShow": null,
+              "meta": {
+                "title": "计数器",
+                "icon": "#"
+              },
+              "visible": "0",
+              "menuType": "C",
+              "children": null,
+              "needCache": true,
+              "domainVisible": false
+            },
+            {
+              "name": "Test2",
+              "path": "test2",
+              "hidden": false,
+              "redirect": null,
+              "component": "test/myTest/test2.vue",
+              "alwaysShow": null,
+              "meta": {
+                "title": "test2",
+                "icon": "#"
+              },
+              "visible": "0",
+              "menuType": "C",
+              "children": null,
+              "needCache": true,
+              "domainVisible": false
+            }
+          ],
+          "needCache": true,
+          "domainVisible": false
         }
       ],
       "needCache": true,
